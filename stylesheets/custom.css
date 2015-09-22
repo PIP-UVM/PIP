@@ -1,0 +1,52 @@
+table.userList ,.userList tr td{
+    border:1px solid red;
+}
+.userList tbody {
+    display:block;
+    height: 70vh;
+    overflow:auto;
+}
+.userList thead, .userList tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+.userList thead {
+    width: calc( 100% - 1em )
+}
+table.userList {
+    width:400px;
+}
+
+.hide{
+/*	display: none;*/
+visibility: hidden;
+}
+
+header h1 {
+	color: #fff; padding-top: 1em;
+   	background: #63b0e1 none repeat scroll 0 0; 
+    	font-size: calc(3em - 4px);
+    	font-weight: 100;
+}
+
+/* need to clear any floats that may exist */
+fieldset#otherSection{
+    clear: both;
+    
+}
+/* just pushes content to left side of the box. */
+fieldset#otherSection{
+    float: left;
+}
+/* when you look at the labels this pushes then next to the input and right 
+ *    aligns them. Display block means they are each on their own line.  */
+fieldset#otherSection label{
+    display: block;
+    text-align: right /* pushes the text to the right where they line up  */
+                      /*  the float left above pushes everything back to the left*/
+}
+
+fieldset#otherSection input{
+    width: 15em;    /* works with above to be the same size for the boxes */
+}

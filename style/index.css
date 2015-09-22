@@ -1,0 +1,691 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.divPush {
+	clear: both;
+}
+
+.finalPush {
+	margin-bottom: 1em;
+}
+
+.question {
+	width: 80%;
+	border: 1px solid #000;
+	margin: 0 auto 2em;
+	padding: 1em;
+	background: #f8f8f8;
+	border-radius: 5px;
+}
+
+.questionTextBox {
+	float: left;
+	width: 50%;
+}
+
+.response {
+	display: block;
+	margin: 5px 0 5px 0;
+}
+
+.response input {
+	margin: 0 5px 0 0;
+}
+
+.questionGrading {
+	float: left;
+	width: 50%;
+	margin-top: .75em;
+}
+
+.gradingText {
+	width: 50%;
+	margin-top: 1em;
+	font-size: .9em;
+}
+
+.questionExample {
+	float: right;
+	width: 40%;
+	margin-right: .75em;
+	margin-top: .75em;
+}
+
+.exampleText {
+	width: 40%;
+	margin-top: 1em;
+	font-size: .9em;
+}
+
+/* Nav */
+nav {
+	width: 100%;
+	background: #222;
+	height: 2em;
+	border-bottom: 1px solid #000;
+}
+
+nav ol li {
+	display: inline-block;
+}
+
+nav ol li a {
+	color: #fff;
+	text-decoration: none;
+	padding: .5em;
+	line-height: 2em;
+	-webkit-transition: .1s;
+	-moz-transition: .1s;
+}
+
+nav ol li a:hover {
+	background: #b3b3b3;
+	-webkit-transition: .1s;
+	-moz-transition: .1s;
+}
+
+/* Index */
+#login #frmLogIn {
+	background-color: #ffffff;
+	border: 1px solid #000;
+	border-radius: 15px;
+	display: inline-block;
+	padding: 1em 4em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#login #frmLogIn h3 {
+	font-weight: bold;
+}
+
+#login #frmLogIn fieldset {
+	border: none;
+}
+
+#login #frmLogIn input {
+	display: block;
+	width: 15em;
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	height: 2em;
+	font-size: 1em;
+}
+
+#login .input {
+	height: 2em;
+	width: 15em;
+	line-height: 1.25em;
+	font-size: 1.2em;
+	font-family: sans-serif;
+	border: 1px solid #000;
+	padding: .5em;
+}
+
+#login .input:focus {
+	outline: 1px solid #5eabed;
+	border: 1px solid #5eabed;
+}
+
+#login .input:hover {
+	outline: 1px solid #5eabed;
+	border: 1px solid #5eabed;
+}
+
+#login .mistake {
+	outline: 1px solid #bf0000;
+	border: 1px solid #bf0000;
+}
+
+#login .mistake:focus {
+	outline: 1px solid #bf0000;
+	border: 1px solid #bf0000;
+}
+
+#login .mistake:hover {
+	outline: 1px solid #bf0000;
+	border: 1px solid #bf0000;
+}
+
+#login .input[readonly] {
+	outline: 1px solid #999;
+	border: 1px solid #999;
+	color: #aaa;
+}
+
+#login .input[readonly]:focus {
+	outline: 1px solid #999;
+	border: 1px solid #999;
+}
+
+#login .input[readonly]:hover {
+	outline: 1px solid #999;
+	border: 1px solid #999;
+}
+
+#login .button {
+	display: block;
+	width: 8em;
+	height: 2.25em;
+	border: 1px solid #000;
+	border-radius: 12px;
+	background: #ffcc00;
+	font-family: "HelveticaNeue-Thin";
+	font-size: 1.45em;
+	transition: .25s;
+	-webkit-transition: .25s;
+	-moz-transition: .25s;
+	margin: auto;
+	outline: none;
+}
+
+#login .button:focus {
+	background: #ff9200;
+}
+
+#login .button:hover {
+	background: #ff9200;
+	transition: .25s;
+	-webkit-transition: .25s;
+	-moz-transition: .25s;
+	cursor: pointer;
+}
+
+#login form a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+}
+
+#login form a:hover {
+	color: #5eabed;
+}
+
+#login form input:disabled {
+	border: 1px solid #ccc;
+}
+
+#login form input:disabled:hover {
+	border: 1px solid #ccc;
+	outline: none;
+}
+
+/* Survey Section */
+.nonquestionSection {
+	width: 80%;
+	border: 1px solid #000;
+	margin: 2em auto;
+	padding: 1em;
+}
+
+#survey .collabagree p {
+	font-size: 2em;
+	margin: .5em;
+	font-weight: 100;
+	font-family: "HelveticaNeue-UltraLight";
+}
+
+#survey .collabagree iframe {
+	width: 60%;
+	height: 20em;
+	display: block;
+	margin: auto;
+}
+
+#survey .collabagree label {
+	font-size: 1.5em;
+	width: 15em;
+	margin: auto;
+	display: block;
+	font-weight: 100;
+	font-family: "HelveticaNeue-UltraLight";
+}
+
+#survey .collabagree input[type=checkbox] {
+	margin: 1em;
+	height: 2em;
+	width: 2em;
+}
+
+#survey .collabagree input[type=submit] {
+	display: block;
+	margin: auto;
+	padding: .5em 1em;
+	border: 1px solid #000;
+	font-size: 1em;
+	background: #fff;
+	transition: .25s;
+}
+
+#survey .collabagree input[type=submit]:hover {
+	background: #b1d6f0;
+	transition: .25s;
+	cursor: pointer;
+}
+
+#survey .prinfo label {
+	display: block;
+	font-size: 1em;
+	margin: 1em 0;
+}
+
+#survey .prinfo .input:after {
+	content: '\A';
+	white-space: pre;
+}
+
+#survey .prinfo .input:not([type=submit]) {
+	height: 1em;
+	width: 12em;
+	line-height: 1.25em;
+	font-size: 1.2em;
+	font-family: sans-serif;
+	border: 1px solid #000;
+	padding: .5em;
+	margin: .5em 1em;
+}
+
+#survey .prinfo input[type=submit] {
+	display: block;
+	margin: auto;
+	padding: .5em 1em;
+	border: 1px solid #000;
+	font-size: 1em;
+	background: #fff;
+	transition: .25s;
+}
+
+#survey .prinfo input[type=submit]:hover {
+	background: #b1d6f0;
+	transition: .25s;
+	cursor: pointer;
+}
+
+#survey .surveydirections p {
+	font-size: 1.5em;
+	margin: .5em;
+	font-weight: 100;
+	font-family: "HelveticaNeue-UltraLight";
+}
+
+#survey .surveydirections input[type=submit] {
+	display: inline-block;
+	margin: auto;
+	padding: .5em 1em;
+	border: 1px solid #000;
+	font-size: 1em;
+	background: #fff;
+	transition: .25s;
+	margin: 0 .5em;
+}
+
+#survey .surveydirections input[type=submit]:hover {
+	background: #b1d6f0;
+	transition: .25s;
+	cursor: pointer;
+}
+
+#survey .questionSection {
+	margin: 1em 0;
+}
+
+#survey .questionSection input[type=submit] {
+	display: inline-block;
+	margin: auto;
+	padding: .5em 1em;
+	border: 1px solid #000;
+	font-size: 1em;
+	background: #fff;
+	transition: .25s;
+	margin: 0 .5em;
+}
+
+#survey .questionSection input[type=submit]:hover {
+	background: #b1d6f0;
+	transition: .25s;
+	cursor: pointer;
+}
+
+#survey .sectionInfo {
+	text-align: center;
+	margin: 1em 0;
+}
+
+#survey .choiceOptions {
+	float: right;
+	display: block;
+	max-width: 40%;
+	text-align: left;
+	line-height: 1.2em;
+}
+
+#questionButtons {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+#survey .complete p {
+	font-size: 1.5em;
+	margin: .5em;
+	font-weight: 100;
+	font-family: "HelveticaNeue-UltraLight";
+}
+
+#survey .complete .input:after {
+	content: '\A';
+	white-space: pre;
+}
+
+#survey .complete select {
+	margin: 1em;
+}
+
+#survey .complete .input:not([type=submit]) {
+	height: 2em;
+	width: 15em;
+	line-height: 1.25em;
+	font-size: 1.2em;
+	font-family: sans-serif;
+	border: 1px solid #000;
+	padding: .5em;
+	margin: 1em 1em;
+}
+
+#survey .complete input[type=submit] {
+	display: block;
+	margin: auto;
+	padding: .5em 1em;
+	border: 1px solid #000;
+	font-size: 1em;
+	background: #fff;
+	transition: .25s;
+}
+
+#survey .complete input[type=submit]:hover {
+	background: #b1d6f0;
+	transition: .25s;
+	cursor: pointer;
+}
+
+/* Survey Tool */
+#surveyTool #submitQuestion label {
+	display: block;
+}
+
+#surveyTool #submitSection label {
+	display: block;
+}
+
+#surveyTool .input:not([type=submit]) {
+	height: 2em;
+	width: 15em;
+	line-height: 1.25em;
+	font-size: 1.2em;
+	font-family: sans-serif;
+	border: 1px solid #000;
+	padding: .5em;
+	margin: 1em 1em;
+}
+
+#surveyTool input[type=submit] {
+	display: block;
+	margin: auto;
+	padding: .5em 1em;
+	border: 1px solid #000;
+	font-size: 1em;
+	background: #fff;
+	transition: .25s;
+}
+
+#surveyTool input[type=submit]:hover {
+	background: #b1d6f0;
+	transition: .25s;
+	cursor: pointer;
+}
+
+#surveyTool .sectionHeaderBox {
+	width: 20em;
+	margin: 1em auto;
+	text-align: center;
+}
+
+#surveyTool #selectSectionName {
+	float: left;
+}
+
+#surveyTool #adminTabs {
+	text-align: center;
+	margin-top: 1em;
+}
+
+#surveyTool #adminTabs a {
+	margin: 1em;
+	color: #000;
+	text-decoration: none;
+}
+
+#surveyTool #adminTabs a:hover {
+	text-decoration: underline;
+}
+
+#surveyTool .questionTextArea {
+	resize: none;
+	padding: .25em;
+	height: 9.5em;
+	width: 100%;
+	font-size: 1em;
+}
+
+#surveyTool .choiceInput {
+	padding: .1em;
+	font-size: 1.25em;
+}
+
+#surveyTool .questionGradingArea {
+	resize: none;
+	font-size: .9em;
+	height: 5em;
+	width: 100%;
+	padding: .28em;
+}
+
+#surveyTool .questionExampleArea {
+	resize: none;
+	font-size: .9em;
+	height: 5em;
+	width: 100%;
+	padding: .2em;
+}
+
+#surveyTool .editQuestionBar a {
+	float: right;
+}
+
+#surveyTool .editQuestionBar input[type=submit] {
+	float: right;
+	height: 22px;
+	line-height: 22px;
+	padding: 0 .5em;
+	margin-right: .5em;
+}
+
+#surveyTool .editQuestionForm #btnEditQuestion {
+	margin-top: 1em;
+}
+
+#surveyTool .gearIcon {
+	height: 22px;
+}
+
+#surveyTool .addQuestionLabel:before {
+	content: "\A";
+	white-space: pre;
+}
+
+#surveyTool .addQuestionLabel:after {
+	content: "\A";
+	white-space: pre;
+}
+
+#surveyTool select {
+	margin: 0 0 2em;
+	float: left;
+}
+
+#surveyTool .questionTextLabel {
+	float: left;
+}
+
+#surveyTool .choicesLabel {
+	width: 40%;
+	float: right;
+}
+
+#surveyTool .choiceOptions {
+	width: 40%;
+	float: right;
+	display: block;
+	text-align: left;
+	line-height: 1.2em;
+}
+
+#surveyTool .choiceInput {
+	width: 80%;
+}
+
+#surveyTool .questionGradingLabel {
+	float: left;
+}
+
+#surveyTool .questionExampleLabel {
+	width: calc(40% + .75em);
+	float: right;
+}
+
+#surveyTool .newQuestionLink {
+	text-align: center;
+	margin: 1em 0;
+}
+
+#surveyTool .newQuestionLink a {
+	color: #000;
+	text-decoration: none;
+}
+
+#surveyTool .newQuestionLink a:hover {
+	text-decoration: underline;
+}
+
+#surveyTool .userTable {
+	border: 1px solid #000;
+	margin: auto;
+	width: 80%;
+}
+
+#surveyTool .userTable td {
+	border: 1px solid #000;
+	padding: .5em;
+}
+
+#surveyTool .userTable th {
+	border: 1px solid #000;
+	padding: .5em;
+	font-weight: bold;
+}
+
+#surveyTool .userTable .newUserRow input {
+	width: 99%;
+	line-height: 1.5em;
+	font-size: 1.15em;
+}
+
+#surveyTool .userTable .tableButtons input {
+	display: inline-block;
+	margin: 0 1em;
+}
+
+#surveyTool #formSectionName {
+	display: inline-block;
+	width: 30%;
+	float: right;
+}
+
+#surveyTool #formSectionName > * {
+	display: inline-block;
+}
+
+#homeNav {
+	background: #3f3f3f;
+}
+
+footer {
+	background: #46506e;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	color: #fff;
+}
+
+footer p {
+	width: 100%;
+	text-align: center;
+	margin: 1em 0;
+}
+
+footer ul {
+	list-style-type: none;
+	margin: 1em 1em;
+}
+
+.mainContent {
+	margin: 2em auto;
+	width: 80%;
+}
+
+#surveyTool #newSection {
+/* 	display: none; */
+}
+
+#surveyTool #newSection label {
+	display: block;
+}
+
+.gearIcon:hover {
+	transform: rotate(90deg);
+	transition: .5s;
+}
+
+.gearIcon {
+	transition: .5s;
+}
+
+#adminTabs {
+	margin-bottom: 1em;
+}
+
+#surveyTool #publishForm {
+	margin-bottom: 2em;
+}
+
+#index p {
+	line-height: 1.75em;
+}
+
+header {
+	background: #46506e;
+	line-height: 6em;
+}
+
+header h1 {
+	color: #fff;
+	margin-left: 1em;
+}
