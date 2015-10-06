@@ -51,10 +51,11 @@
       $to = $email;
       $cc = "";
       $bcc = "";
-      $from = "vip@uvm.edu";
+      $from = "pip@uvm.edu";
       $subject = "Your Survey Code is " . $secureCode;
       $message = "<p>Your Practice Integration Profile survey code is:</p>";
       $message .= "<b>" . $secureCode . "</b>";
+      $message .= "<p>This code can only be used once.</p>";
 
       return sendMail($to, $cc, $bcc, $from, $subject, $message);
     }

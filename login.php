@@ -158,12 +158,12 @@
 	<form method=post class='loginBox'>
 		<h3>PIP Survey</h3>
 
- <p style='padding: 3em 0 2em 0;'>You may take the survey as a <a href='survey.php?section=wflow'>Guest</a>?  NOTE: survey data will not be saved.</p>
+ <p style='padding: 3em 0 2em 0;'><a href='survey.php?section=wflow'>Preview Survey</a>  NOTE: survey data will not be saved and there is no score.</p>
 
 		<fieldset class='txtEmail'>
                         <label for='txtEmail' style='padding-top:2em;'>To  take the survey enter your Email address:</label>
 			<input type='text' name='txtEmail' placeholder='Email' class='validate_txt_input'>
-			<input type='submit' name='btnSubmit' value=''>
+			<input type='submit' name='btnSubmit' value='Continue'>
 		</fieldset>
 	</form>
 	<?php

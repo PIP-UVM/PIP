@@ -497,9 +497,10 @@ $results = $thisDatabase->select($query, $data);
 			include "components/bubbleNav.php";
 
 			print "<div class='questionButtons'>";
+print "<p>You must complete the section before moving on. Moving on will automatically save your results.</p>";
 			print "<input type=submit name='btnLast' value='Previous Section'>";
 // 			print "<input type=submit name='btnReset' value='Reset'>";
-			print "<input type=submit name='btnSave' value='Save'>";
+//			print "<input type=submit name='btnSave' value='Save'>";
 			print "<input type=submit name='btnNext' value='Next Section'>";
 			print "</div>";
 

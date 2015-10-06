@@ -10,9 +10,9 @@
 			}
 
 			else {
-				print "<li><a href='http://integrationacademy.ahrq.gov/sites/default/files/Lexicon.pdf' target='_blank'>Lexicon</a></li>";
+// print "<li><a href='http://integrationacademy.ahrq.gov/sites/default/files/Lexicon.pdf' target='_blank'>Lexicon</a></li>";
 				print "<li><a href='integrationScenarios.php'>Integration Scenarios</a></li>";
-				print "<li><a href='about.php'>About PIP</a></li>";
+				//print "<li><a href='about.php'>About PIP</a></li>";
 				print "<li><a href='login.php'>Survey</a></li>";
 			}
 		?>

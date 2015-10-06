@@ -15,16 +15,17 @@
 
   print "<div class='pickSurvey user_content'>";
 
-  print "<h1>Incomplete:</h1>";
+  print "<p>You have started but have not completed the survey below. ";
+  print "Click on the survey to recieve a new code.</p>";
 
   foreach ($userSurveys as $survey) {
     $record_id = sha1($survey['record_id']);
 
-    print "<a href='?e=1&r=" . $record_id . "&ea=" . $email . "' class='currentSurveys'>" . $survey['survey_name'] . "</a>";
+    print "<p><a href='?e=1&r=" . $record_id . "&ea=" . $email . "' class='currentSurveys'>" . $survey['survey_name'] . "</a></p>";
   }
 
   if ($newestPublished != $newestName) {
-    print "<a href='?e=1&r=" . $survey['record_id'] . "&ea=" . $email . "' class='currentSurveys newestSurvey'>Start the newest survey.</a>";
+    print "<p><a href='?e=1&r=" . $survey['record_id'] . "&ea=" . $email . "' class='currentSurveys newestSurvey'>Start the newest survey.</a></p>";
   }
 
   print "</div>"; // End .pickSurvey

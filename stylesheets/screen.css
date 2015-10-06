@@ -474,13 +474,22 @@ body {
 #login .loginBox input[type=submit], #login .codeBox input[type=submit] {
   outline: none;
   border: none;
-  height: 2.5em;
-  width: 2.5em;
-  padding: .75em;
-  background: url("../png/glyphicons-224-chevron-right.png") no-repeat 0;
+  border-radius: 2em;
   cursor: pointer;
+  font-size: 1em;
+  
+/*height: 2.5em;
+  width: 2.5em;*/
+  
+  padding: .75em;
+  /*background: url("../png/glyphicons-224-chevron-right.png") no-repeat 0;
+ */ 
+
 }
 
+#login .loginBox input[type=submit]:hover, #login .codeBox input[type=submit]:hover{
+background-color: cornsilk;
+}
 /* line 374, ../sass/screen.scss */
 #survey .bubbleNav {
   display: block;
@@ -500,6 +509,8 @@ body {
 /* line 389, ../sass/screen.scss */
 #survey .bubbleNav .bubbleActive {
   background: #333;
+  height: 8px;
+  width: 8px;
 }
 /* line 394, ../sass/screen.scss */
 #survey .questionButtons {

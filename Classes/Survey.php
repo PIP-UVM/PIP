@@ -84,12 +84,12 @@
         $to = $user['user_email'];
         $cc = "";
         $bcc = "";
-        $from = "vip@uvm.edu";
+        $from = "pip@uvm.edu";
         $subject = "You have a new survey!";
         $message = "<p>You have a new survey to complete.</p>";
         $message .= "<p>Please sign in <a href='vip.w3.uvm.edu/DEVELOP/login.php'>here</a> to complete it.</p>";
 
-        $mailed = sendMail($to, $cc, $bcc, $from, $subject, $message);
+     //   $mailed = sendMail($to, $cc, $bcc, $from, $subject, $message);
       }
     }
 

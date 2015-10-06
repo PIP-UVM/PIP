@@ -50,3 +50,13 @@ fieldset#otherSection label{
 fieldset#otherSection input{
     width: 15em;    /* works with above to be the same size for the boxes */
 }
+
+.pickSurvey p, .txtCode h2, .txtCode p, .questionButtons p {
+	line-spacing: 1em;
+	padding-bottom: 1em;
+}
+
+.txtCode h2{
+	font-size: 1.5em;
+}
+
